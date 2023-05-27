@@ -99,6 +99,14 @@ RegisterNetEvent('qb-bossmenu:client:OpenMenu', function()
                 event = "qb-bossmenu:client:SocietyMenu",
             }
         },
+        {
+            header = Lang:t("body.grades"),
+            txt = Lang:t("body.gradesd"),
+            icon = "fa-solid fa-ranking-star",
+            params = {
+                event = "qb-bossmenu:client:GradeMenu",
+            }
+        },
     }
 
     for _, v in pairs(DynamicMenuItems) do
